@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boekenbeheer</title>
+<link rel="stylesheet" href="bewerkboek.css">
+</head>
+<body>
+
+<h1>Boekenbeheer</h1>
+
+<div class="search-container">
+  <input type="text" id="isbnInput" placeholder="ISBN">
+  <input type="text" id="titelInput" placeholder="Titel">
+  <input type="text" id="auteurInput" placeholder="Auteur">
+  <button onclick="searchBook()">Zoeken</button>
+</div>
+
+<div id="result"></div>
+
+<!-- Bewerken formulier -->
+<div id="editForm">
+  <h3>Boek bewerken</h3>
+  <input type="text" id="editTitel" placeholder="Titel">
+  <input type="text" id="editAuteur" placeholder="Auteur">
+  <input type="text" id="editUitgeverij" placeholder="Uitgeverij">
+  <input type="number" id="editJaar" placeholder="Publicatiejaar">
+  <input type="number" id="editExemplaren" placeholder="Exemplaren">
+  <button onclick="patchBook()">Opslaan</button>
+</div>
+
+<script src="bewerkboek.js"></script>
+</body>
+</html>
+
