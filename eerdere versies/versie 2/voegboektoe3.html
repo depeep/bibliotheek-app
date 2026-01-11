@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boeken zoeken op isbn</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+
+</head>
+<body>
+
+  <h1>Zoek boek op ISBN- telefooncamera</h1>
+  <input type="text" id="isbnInput" placeholder="Scan of typ isbn">
+  <button onclick="searchBook()">Zoeken</button>
+
+  <button id="scanBtn">📷 Scan ISBN</button>
+  <div id="scanner" ></div>
+  <!-- <div id="scanner" style="width:300px; height:200px; display:none;"></div> -->
+  
+
+
+  <!-- <input type="text" id="isbnInput" placeholder="Scan of typ isbn">
+  <button onclick="searchBook()">Zoeken</button> -->
+  <p id="feedback">  </p>
+
+  <div id="result"></div>
+  
+  <!-- <button id="opslaanBtn" style="display:none;">Opslaan in database</button> -->
+  <button id="opslaanBtn">Opslaan in database</button>
+  
+
+
+  <!-- <script src="zoekopisbnenvoegtoe.js"> </script> -->
+  <script src="voegboektoe3.js"> </script>
+
+</body>
+</html>
+
+<!-- deze versie gebruikt de camera van je mobiel -->

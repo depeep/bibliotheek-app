@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boekenbeheer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Titelbalk */
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 15px;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Zijbalk */
+    nav {
+      width: 220px;
+      background: #f0f0f0;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 12px;
+      color: #333;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #4a90e2;
+    }
+
+    /* Hoofdvenster */
+    iframe {
+      flex: 1;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+ 
+<!-- vanwege verzetten -->
+
+  <header>📚 Boekenbeheer Dashboard</header>
+
+  <div class="container">
+    <nav>
+      <a href="overzicht.html" target="contentFrame">Overzicht</a>
+      <a href="voegboektoe1.html" target="contentFrame">Voeg toe-isbn</a>
+      <a href="voegboektoe2.html" target="contentFrame">Voeg boek toe- titel</a>
+      <a href="voegboektoe3.html" target="contentFrame">Voeg boek toe- telefoon</a>
+      <a href="test.html" target="contentFrame">Testpagina</a>
+      <a href="dummy2.html" target="contentFrame">Dummy 2</a>
+      <a href="dummy3.html" target="contentFrame">Dummy 3</a>
+    </nav>
+
+    <iframe name="contentFrame" title = "Hoofdvenster" src="overzicht.html"></iframe>
+  </div>
+
+</body>
+</html>
+
