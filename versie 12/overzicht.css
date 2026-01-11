@@ -1,0 +1,70 @@
+
+ /* voor overzicht */
+#boekLijst {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.boek {
+  display: flex;
+  flex-direction: row; /* Afbeelding links, tekst rechts */
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.boek img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.boek-info {
+  display: flex;
+  flex-direction: column; /* Zorgt dat tekst netjes onder elkaar staat */
+  justify-content: flex-start;
+}
+
+.boek-info h3 {
+  margin: 0 0 10px 0;
+}
+
+/* nieuw voor zoekboek */
+
+
+.result-container {
+  display: flex;
+  flex-wrap: wrap;      /* Zorgt dat kaarten naast elkaar komen en doorlopen */
+  gap: 15px;            /* Ruimte tussen kaarten */
+  justify-content: flex-start; /* Links uitlijnen */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;         /* Vaste breedte voor elke kaart */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: right;   /* Afbeelding en tekst centreren */
+}
+
+.card img {
+  width: 150px;         /* Vaste breedte */
+  height: 200px;        /* Vaste hoogte */
+  object-fit: cover;    /* Zorgt dat afbeelding netjes wordt bijgesneden */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenerbeheer</title>
+  <link rel="stylesheet" href="lenersbeheer.css">
+</head>
+<body>
+  <h1>Lenersbeheer</h1>
+
+  <!-- Formulier voor toevoegen / wijzigen -->
+  <div class="form-container">
+    <h3>Lener toevoegen / wijzigen</h3>
+   
+    <label for="lenerNaam">Naam:  </label>
+    <input type="text" id="lenerNaam" placeholder="Naam van lener"><br>
+
+    <label for="lenerActief">Actief: </label>
+    <select id="lenerActief">
+      <option value="1">Ja</option>
+      <option value="0">Nee</option>
+    </select><br>
+
+    <button onclick="addOrUpdateLener()">Opslaan</button>
+    <button onclick="clearForm()">Leegmaken</button>
+  </div>
+
+  <!-- Zoekfunctie -->
+  <div>
+    <h3>Lener zoeken</h3>
+    <input type="text" id="zoekNaam" placeholder="Naam zoeken">
+    <button onclick="searchLener()">Zoeken</button>
+  </div>
+
+  <!-- Resultaten -->
+  <div id="result"></div>
+
+  <script src="lenersbeheer.js"></script>
+</body>
+</html>
+
+<!-- <label for="lenerId">ID (alleen bij wijzigen):</label><br> -->
